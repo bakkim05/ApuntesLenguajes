@@ -11,13 +11,3 @@
     ((equal? num 1) num)
     (else
      (* num (fact (- num 1))))))
-
-
-(define (miembro x y)
-  (cond
-    ((or (null? x) (null? y)) #f)
-    ((equal? (car y) x) #t)
-    (else
-     (miembro x (cdr y)))
-    )
-  )
