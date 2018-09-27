@@ -234,3 +234,127 @@ b
 7
 ```
 
+## Listas
+
++ ( ) <--- lista vacia
++ (s1 s2 ... sN) <--- una lista que puede tener de 1 a N simbolos
+
+## Las funciones CAR y CDR
+
++ La funcion **car** regresa como valor el primer elemento de una lista
+
+```Scheme
+> (car '())
+error
+
+> (car '(1 2 3))
+1
+
+> (car '(+ (* 2 3) (* 4 5)))
++
+
+> (car '((1 2) (2 3) (3 4)))
+(1 2)
+```
+
++ La funcion **cdr** realiza una funcion complementaria. Regresa una lista que contiene todos los elementos excepto el primero.
+
+```Scheme
+> (cdr '())
+error
+
+> (cdr '(s1 s2 ... sN))
+(s2 ... sN)
+
+> (cdr '((1 2) (2 3) (3 4)))
+((2 3) (3 4))
+
+```
+
++ Se puede combinar las funciones para obtener un valor deseado
+
+```Scheme
+> (car (car '((1 2) (2 3) (3 4))))
+1
+
+> (car (cdr (cdr '((1 2) (2 3) (3 4)))))
+(3 4)
+```
+
++ Existe una forma abreviada que inicia con la letra *c* y termina con la letra *r* y puede tener hasta **4 valores intermedios** de la forma **c _ _ _ _ r**. 
+
+```Scheme
+> (caar '((1 2) (2 3) (3 4)))
+1
+
+> (caddr '((1 2) (2 3) (3 4)))
+(3 4)
+```
+
+## Las funciones CONS y LIST
+
++ La diferencia de las funciones de **car** y **cdr** a las de **cons** y **list** es que **car** y **cdr** *destruyen* listas en partes, mientras que **cons** sirve para *construir* listas.
++ **cons** toma un simbolo cualquiera y lo inserta en el primer elemento de la lista.
+
+```Scheme
+> (cons s0 '(s1 s2 ... sN))
+(s0 s1 s2 ... sN)
+
+> (cons '(1 2) '((3 4) (5 6)))
+((1 2) (3 4) (5 6))
+
+> (cons '(1 2) '(a b c))
+((1 2) a b c)
+```
++ La funcion **list** tambien se utiliza para construir listas. Recibe un numero variable de parametor y produce como resultado una lista con todos los paramtros.
+
+```Scheme
+> (list s0 s1 s2 ... sN)
+(s0 s1 s2 ... sN)
+
+> (list 1 2 3 4)
+(1 2 3 4)
+
+> (list '1 '2 '3 '4)
+(1 2 3 4)
+
+> (list 'a 'b 'c 'd)
+(a b c d)
+```
+
+## Las funciones LIST?, EQUAL?, NULL?
+
++ La funcion **list?** recibe un argumento y devuelve un booleano. En caso de que el argumento sea una lista regresa un #t, de lo contrario un #f.
+```Scheme
+> (list? s1)
+
+> (list? '())
+#t ;Es una lista null
+
+>(list? 3)
+#f
+```
+
++ La funcion **equal?** se utiliza para comparar elementos. Se puede utilizar con argumentos numericos o con argumentos mas complejos. Recibe dos argumentos. Regresa booleano
+
+```Scheme
+> (equal? arg1 arg2)
+
+> (equal? 0 0)
+#t
+
+> (equal? '1 '(1 0))
+#f
+```
+
++ La funcion **null?** recibe un argumento y devuelve un booleano. #t en caso de que la lista sea nula o de lo contrario un #f.
+
+```Scheme
+> (null? arg1)
+
+> (null? '())
+#t
+
+> (null? '(1))
+#f
+```
