@@ -29,6 +29,3 @@
     (else (q_aux (car lista) (cdr lista)))
     )
   )
-
-
-#|Trabajo en Clase Semana 10 Clase 2|#
