@@ -21,3 +21,11 @@
      (miembro x (cdr y)))
     )
   )
+
+(define (eliminar x y)
+  (cond
+    ((null? y) '())
+    ((equal? x (car y)) (eliminar x (cdr y)))
+    (else (cons (car y)(eliminar x (cdr y))))
+    )
+  )
