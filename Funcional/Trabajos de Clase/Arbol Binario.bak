@@ -1,0 +1,54 @@
+#lang racket
+
+#|Programe la funcion elimnar un elemento de un arbol binario.
+  Programe la funcion encontrar las rutas anchura primero|#
+
+(define (arbol_Aux? x)
+  (not (list? x))
+  )
+
+(define (raiz arbol)
+  (cond
+    ((arbol_Aux? arbol) arbol)
+    (else
+     (car arbol)
+     )
+    )
+  )
+
+(define (hijoIzq arbol)
+  (cond
+    ((arbol_Aux? arbol) '())
+    (else
+     (cadr arbol)
+     )
+    )
+  )
+
+(define (hijoDer arbol)
+  (cond
+    ((arbol_Aux? arbol) '())
+    (else
+     (caddr arbol)
+     )
+    )
+  )
+
+;Encontrar las rutas anchura primero
+(define (encontrado? elemento arbol)
+  (cond
+    ((null? arbol) #f)
+    ((equal? elemento (raiz arbol)) #t)
+    ((< elemento (raiz arbol))(encontrado? elemento (hijoIzq arbol)))
+    ((> elemento (raiz arbol))(encontrado? elemento (hijoDer arbol)))
+    )
+  )
+
+(define (anchuraPrimero elemento arbol)
+  (cond
+    ((null? arbol) #f)
+    ((equal? elemento (raiz arbol)) arbol)
+    ((< elemento (raiz arbol))(anchuraPrimero elemento (hijoIzq arbol)))
+    ((> elemento (raiz arbol))(anchuraPrimero elemento (hijoDer arbol)))
+    )
+  )
