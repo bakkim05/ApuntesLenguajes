@@ -10,8 +10,8 @@
 
 ## Requisitos de un lenguaje de programacion
 
-+ Universal: todo problema que pueda ser resulto por una computadora, deber ser posible de programar en el lenguaje. hasta un leguaje pequeno puede cumplirlo.
-+ Nataural: debe facilitar la resolucion de problemas al menos para el area de aplicacion de lenguaje.
++ Universal: todo problema que pueda ser resuelto por una computadora, deber ser posible de programar en el lenguaje. hasta un lenguaje pequeno puede cumplirlo.
++ Nataural: debe facilitar la resolucion de problemas al menos para el area de aplicacion del lenguaje.
 + Implementable: debe ser posible ...
 
 ## Sintaxis vs Semantica
@@ -23,20 +23,20 @@
 
 # Procesadores de lenguajes
 
-+ Es cualquier sistema para procesamiento de programs, ejecucion de progrmaas o prepara dichos programas para ejecucion.
++ Es cualquier sistema para procesamiento de programas, ejecucion de programas o prepara dichos programas para ejecucion.
 
 # Programas de alto nivel
 
 + Se le caracteriza por expresarle el algoritmo de una manera adecuada a la capacidad cognitiva humana, en lugar de la capacidad que se la ejecuta de las maquinas.
 + Son programas que son independientes de la maquina sobre la que se ejecutan.
-+ Son compiladosen lenguaje de maquina o son interpretados de manera directa o una combinacion de ambos.
++ Son compilados en lenguaje de maquina o son interpretados de manera directa o una combinacion de ambos.
 
 # Paradigmas de Programacion
 
-+ Imperativo: Uso de comandos para actualizar variables, Caracterizado por el uso de variable,s comando y procedimientos.
++ Imperativo: Uso de comandos para actualizar variables, Caracterizado por el uso de variables, comandos y procedimientos.
 + Orientado a Objetos: La variables puesden ser accedidasunicamente por medio de operaciones asociadas a ellas. Caracterizado por el uso de objetos clases y herencia.
 + Funcional: Hace uso de funciones como objetos de primera clase e incorporan avanzados sistemas de tipos. Se basan en funciones sobre listas y arboles, permiten resolver problemas significativos sin utilizar variables.
-+ Logico: Uso de principios logicos para hacer deducciones que resuelven problemas. Se caracteriza por el uso de relaciones, Estan basados en un subconjunto de la logica matematica. El computador infiera asociaciones entre valroes en lugar de calcular valore de salida a partir de valores de entrada.
++ Logico: Uso de principios logicos para hacer deducciones que resuelven problemas. Se caracteriza por el uso de relaciones, Estan basados en un subconjunto de la logica matematica. El computador infiere asociaciones entre valores en lugar de calcular valores de salida a partir de valores de entrada.
 
 ## FORTRAN (Formula Translating System)
 
@@ -50,7 +50,7 @@
 
 + Fue creado en el ano 1959.
 + Introdujo el concepto de descripcion de datos.
-+ Introdujo la idea de un lenguae con un area de aplicacion no numerica.
++ Introdujo la idea de un lenguaje con un area de aplicacion no numerica.
 + Su ultima version fue estandarizada en el 2002.
 
 ## Algol 60 (Algorithmic Languaje)
@@ -70,8 +70,8 @@
 
 ## Pascal
 
-+ Fue creado pro el profesor suizo Nicklaus Writh entre los anos 1968 y 1969
-+ Es el mas popular de los programas Algo-like debido a su simpleza, sistematizacion e implementacion eficiente
++ Fue creado por el profesor suizo Nicklaus Writh entre los anos 1968 y 1969
++ Es el mas popular de los programas Algol-like debido a su simpleza, sistematizacion e implementacion eficiente
 + De los primeros en  tener una gran riqueza en estrucutra de control, tipo de datos y definiciones.
 
 ## C
@@ -113,17 +113,18 @@
 + La esencia de la programacion funcional consiste en la combinacion de funciones para producir funciones aun mas poderosas.
 
 ```
-Funcion: Asociacion que toma ccada elemento de un conjunto (dominio) y le asigna un elemento de otro dominio (Rango).
+Funcion: Asociacion que toma cada elemento de un conjunto (dominio) y le asigna un ambito (Rango).
 
 Ejemplo: Cos(x)
 ```
 ## Paradigma de Programacion Funcional
 
 + Estilo de progrmacion que enfatiza la evaluacion de expresiones, antes que la ejecucion de comandos.
-+ Una progrmacion funcional esta constituido enteramente por funciones; el programa esta constituido enteramente por funciones; el programa principal es una funcion que toma como argumento la entrada al programa y genera la salida del programa como su resultado.
++ Una progrmacion funcional esta constituido enteramente por funciones; el programa principal es una funcion que toma como argumento la entrada al programa y genera la salida del programa como su resultado.
 + La funcion principal se define en terminos de otras funciones y estas a su vez, en terminos de mas funciones; esta cadena finaliza en funciones predefinidas o primitivas.
-+ Se ajusta C a la definicion de programa funcional?
-+ Cual es la diferencia?
+
+### Se ajusta C a la definicion de programa funcional?  Cual es la diferencia?
+
 + La principal diferencia de con los progrmas convencionales es que los unicos elementos constructores en los programas funcionales son la definicion y la aplicacion de funciones, mientras que en los programas imperativos se utilzan variables, asignaciones, ciclos iterativos, etc.
 + Construya una funcion f que reciba como argumento un natural n y retorne la suma de los naturales desde 1 hasta n es decir:
 

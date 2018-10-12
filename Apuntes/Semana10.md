@@ -26,7 +26,7 @@ esto le da mayor capacidad expresiva al lenguaje permitiendo escribir el codigo 
 
 ## Lenguajes FP
 
-+ Lenguaje funcionaal y simple y puro
++ Lenguaje funcional; simple y puro
 + Creado por John Backus a principio de los 70s.
 + No tiene variables, todos los datos deben de ser usados literalmente.
 + Las principales estructuras de datos del lenguaje son los valores de base y las secuencias.
@@ -38,14 +38,14 @@ esto le da mayor capacidad expresiva al lenguaje permitiendo escribir el codigo 
 
 ## Lenguaje LISP
 
-+ Es el lenguaje de programacion ams cercano a un lenguaje funcional
++ Es el lenguaje de programacion mas cercano a un lenguaje funcional
 + Especificado originalmente en 1958 por John McCarthy
 + Con el fin de mejorar la eficiencia de las versiones actuales de LISP incluyen caracteristicas no funcionales.
 
 ## Ventajas de utilizar Scheme
 
-+ Es un lenguaje oritentado hacia la modleacion de problemas. Facilita la abstraccion de datos y procesos.
-+ El pasar de ua especificacion formal hacia el desarrollo de un programa es relativamente sencillo.
++ Es un lenguaje oritentado hacia la modelacion de problemas. Facilita la abstraccion de datos y procesos.
++ El pasar de una especificacion formal hacia el desarrollo de un programa es relativamente sencillo.
 + Posee una base matematica solida, el calculo lambda. De esta forma, las pruebas de correctitud de programas son mucho mas faciles.
-+ Usualemtne los programas escritos en este lengauej son muchos mas cortos, lo cual permiten un mayor nivel de perfeccionamiento y mantenimiento.
++ Usualemtne los programas escritos en este lengauje son mucho mas cortos, lo cual permiten un mayor nivel de perfeccionamiento y mantenimiento.
 

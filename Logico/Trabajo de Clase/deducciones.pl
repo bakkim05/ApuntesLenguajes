@@ -20,3 +20,8 @@ legusta(alicia, sprite).
 legusta(marco, water).
 legusta(marco, coffee).
 legusta(sally, pepsi).
+
+
+miembro(Val, [Val|_]).
+miembro(Val, [_|Cola]):- miembro(Val, Cola).
+
